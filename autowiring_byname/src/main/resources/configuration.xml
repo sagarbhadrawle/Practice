@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This is parent tag for the beans tag -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!--
+		This tag is used to provide the bean definition such that 
+		the bean will be created by the container
+		id: contains the name of the bean
+		class: contains FQCN of bean
+	-->
+	
+
+</beans>
