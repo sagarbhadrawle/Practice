@@ -20,7 +20,7 @@ public interface StudentService {
 	
 	public List<Student> viewAllStudent();
 	
-	public List<StudentDTO> getDetailsByRollNumberMore(Integer roll);
+//	public List<StudentDTO> getDetailsByRollNumberMore(Integer roll);
 	
 	public List<Student> getTop5ByOrderByNameDesc();
 	
@@ -30,7 +30,7 @@ public interface StudentService {
 	
 	public List<Student> getStudentsPageWise(int page, int size);
 	
-	public Student updateStudent(Integer roll, Integer marks);
-	
-	public String deleteStudentByRoll(Integer roll);
+//	public Student updateStudent(Integer roll, Integer marks);
+//	
+//	public String deleteStudentByRoll(Integer roll);
 }

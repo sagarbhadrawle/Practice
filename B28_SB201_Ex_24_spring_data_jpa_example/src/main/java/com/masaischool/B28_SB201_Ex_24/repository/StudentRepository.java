@@ -21,9 +21,17 @@ public interface StudentRepository extends JpaRepository<Student,Integer> {
 //	where s  from student s where s.roll > :roll or s.marks <= :marks
 	
 //	the above 
+//	
+//	@Query("SELECT S FROM STUDENT S WHERE S.marks BETWEEN :begin AND :end") // named parameter
+//	List<Student> abc(@Param("begin") Integer begin, @Param("end") Integer end); 
 	
-	@Query("SELECT S FROM STUDENT S WHERE S.marks BETWEEN :begin AND :end") // named parameter
-	List<Student> abc(@Param("begin") Integer begin, @Param("end") Integer end); 
+	
+	@Query("Select S from student s where s.marks between :begin and :end")
+	List<Student> abc(@Param("begin") Integer begin, @Param("end") Integer end);
+	
+	
+	@Query("select s.name from student s where s.marks>?1 marks")
+	List<String> getNameByMarks(Integer marks);
 	
 	@Query(value = "SELECT * FROM ST",nativeQuery= true)
 	List<String> getAllStudentByNativeQuery();
@@ -35,6 +43,6 @@ public interface StudentRepository extends JpaRepository<Student,Integer> {
 	
 	public List<Student> findTop5ByOrderByNameDes();
 	
-	Public List<Student> findTop3ByMarksGreaterThan(Integer marks);
+	public List<Student> findTop3ByMarksGreaterThan(Integer marks);
 	
 }

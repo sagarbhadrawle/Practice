@@ -7,6 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 //import org.springframework.context.ApplicationContextAware;
 //import org.springframework.beans.BeansException;
 
+/**
+ * 
+ */
 @SpringBootApplication
 public class B28Sb201Ex20FirstSpringbootWebAppApplication{
 	public static void main(String[] args) {
@@ -14,4 +17,4 @@ public class B28Sb201Ex20FirstSpringbootWebAppApplication{
 	}
 }
 
-//Browser <--> Controller <--> Service <--> Repository
+//Browser <--> Controller <--> Service <--> Repositoryb
