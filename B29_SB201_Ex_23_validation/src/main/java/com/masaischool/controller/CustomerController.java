@@ -32,6 +32,8 @@ public class CustomerController {
 		customerList.add(new Customer(1,"ABC",LocalDate.now(),"a@a.in","9865321475"));
 	}
 	
+	
+	
 	@PostMapping("/customers")
 	public ResponseEntity<Customer> addCustomer(@Valid @RequestBody Customer customer)
 	{
