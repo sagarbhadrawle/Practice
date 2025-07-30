@@ -3,7 +3,7 @@ package com.masai.BiDirecManyToMany;
 import java.util.HashSet;
 import java.util.Set;
 
-import com.masai.UniManyToOne.Student;
+
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
@@ -83,7 +83,7 @@ static EntityManagerFactory emf;
 public static void main(String[] args) {
 		
 		Demo4 d = new Demo4();
-		d.fun();
+//		d.fun();
 		
 	}
 	

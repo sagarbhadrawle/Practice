@@ -2,7 +2,7 @@ package com.masai.BiDirecManyToMany;
 
 import java.util.Set;
 
-import com.masai.UniManyToOne.Student;
+
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;

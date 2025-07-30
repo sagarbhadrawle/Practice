@@ -42,7 +42,7 @@ public class Demo3 {
 	public static void main(String[] args) {
 		
 		Demo3 d = new Demo3();
-		d.fun();
+//		d.fun();
 		
 	}
 	

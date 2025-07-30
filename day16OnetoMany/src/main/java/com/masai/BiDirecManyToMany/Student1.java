@@ -23,7 +23,7 @@ public class Student1 {
 	
 	@ManyToMany(cascade = CascadeType.ALL)
 	@JoinTable(name = "studentCourse",
-		joinColumns = {@JoinColumn(name="sid")},
+		joinColumns = {@JoinColumn(name="sid")},	
 		inverseJoinColumns = {@JoinColumn(name="cid")})
 	private Set<Course> courses;
 	
