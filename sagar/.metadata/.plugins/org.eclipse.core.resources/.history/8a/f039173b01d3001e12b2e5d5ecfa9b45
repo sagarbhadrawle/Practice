@@ -1,0 +1,10 @@
+package com.masai;
+
+public abstract class Sigma {
+	
+	void abstract method()
+	{
+		System.out.println("sdf");
+	}
+	
+}

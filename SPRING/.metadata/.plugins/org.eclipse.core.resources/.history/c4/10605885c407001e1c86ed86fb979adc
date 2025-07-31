@@ -1,0 +1,24 @@
+package com.msai;
+
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+
+public class Demo {
+	
+
+	public static void main(String[] args) {
+		
+      Student s1 = new Student(10, "s1", 550);
+      Student s2 = new Student(10, "s1", 550);
+      
+      System.out.println(s1==s2);//false
+      System.out.println(s1.hashCode());
+      System.out.println(s2.hashCode());
+      
+      System.out.println(s1.equals(s2));//true
+     
+	}
+
+}

@@ -1,0 +1,19 @@
+package com;
+import java.util.HashMap;
+
+public class Demo {
+    public static void main(String[] args) {
+        String str = "luffy";
+        HashMap<Character, Integer> object = new HashMap<>();
+
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            if (!object.containsKey(ch)) {
+                object.put(ch, 1);
+            } else {
+                object.put(ch, object.get(ch) + 1);
+            }
+            System.out.println(object);
+        }
+    }
+}

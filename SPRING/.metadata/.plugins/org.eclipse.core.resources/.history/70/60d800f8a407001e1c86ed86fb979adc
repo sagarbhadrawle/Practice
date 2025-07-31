@@ -1,0 +1,40 @@
+package com.msai;
+
+public class Demo {
+
+	public int getPension(int age, int salary) throws  InvalidAgeException{
+		int pension = 0;
+		
+		if(age> 40 && age <100) {
+			pension = (age * salary)/100;
+		}
+		else {
+		InvalidAgeException	cnf = new InvalidAgeException("Invalid Age : "+age);
+			throw cnf;
+			
+		}
+		return pension;
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		System.out.println("start of main");
+
+		
+		
+		Demo d1 = new Demo();
+	
+		int pension;
+		try {
+			pension = d1.getPension(30, 20000);
+		} catch (InvalidAgeException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	
+		System.out.println("end of main");
+	}
+
+}

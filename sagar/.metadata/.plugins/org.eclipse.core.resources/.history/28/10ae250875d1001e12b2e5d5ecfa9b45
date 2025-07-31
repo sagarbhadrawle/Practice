@@ -1,0 +1,12 @@
+package com.masai;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		long s = 23;
+		byte t = (byte) s;
+		System.out.println("sagar");
+		
+	}
+}

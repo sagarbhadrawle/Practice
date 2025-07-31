@@ -1,0 +1,32 @@
+package com.masai;
+
+public class Demo {
+	
+	int s = 10;
+	
+	void fun1(A a1)
+	{	
+		
+		if(a1!=null)
+		{
+		
+		System.out.println("inside fun1 of Demo");
+		System.out.println("the value of a1 is :"+a1);
+		
+		System.out.println("skdjfksjdf");
+		a1.funA();
+		}
+	}
+	
+
+	public static void main(String[] args) 
+	{
+		String s = "sdfkjksdf sjddkf";
+		String t = "sagar bhad";
+		
+		System.out.println(s.indexOf("s",7));
+		
+		
+				System.out.println("b".compareTo("a"));
+	}
+}

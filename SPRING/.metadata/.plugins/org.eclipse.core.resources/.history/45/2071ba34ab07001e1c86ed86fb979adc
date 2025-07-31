@@ -1,0 +1,26 @@
+package com.msai;
+
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Demo {
+	
+
+	public static void main(String[] args) {
+		
+		List list = new ArrayList<>();
+		 
+        Student s1 = new Student(10, "s1", 550);
+        Student s2 = new Student(50, "s2", 750);
+        Student s3 = new Student(30, "s3", 950);
+        
+        list.add(s1);
+        list.add(s2);
+        list.add(s3);
+        System.out.println(list.get(3));
+        
+     
+	}
+
+}

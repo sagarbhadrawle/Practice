@@ -1,0 +1,14 @@
+package com.masai;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		byte s = 23;
+		
+		System.out.println(Byte.MIN_VALUE);
+		
+		
+		
+	}
+}

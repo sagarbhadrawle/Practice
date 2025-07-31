@@ -1,0 +1,23 @@
+package com.masai;
+
+public class Demo {
+	
+	void fun1(A a1)
+	{
+		System.out.println("inside fun1 of Demo");
+		System.out.println("the value of a1 is :"+a1);
+		if(a1==null)
+		{
+			throw new NullPointerException("Please enter value")
+		}
+		a1.funA();
+	}
+	
+
+	public static void main(String[] args) 
+	{
+		Demo a = new Demo();
+		a.fun1(null);
+		
+	}
+}

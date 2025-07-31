@@ -1,0 +1,52 @@
+package com;
+import java.util.*;
+
+public class Demo {
+    public static void main(String[] args) {
+        
+    	Map<Integer, String> map = new LinkedHashMap<>();
+
+		map.put(1, "one");
+		map.put(2, "two");
+		map.put(3, "three");
+		map.put(4, "four");
+		map.put(5, "five");
+		map.put(6, "six");
+
+		System.out.println(map);
+		
+		Collection<Integer> keys  = map.keySet();
+		System.out.println(keys);
+    	
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//String str = "luffy";
+//Map<Character, Integer> object = new LinkedHashMap<>();
+//
+//for (int i = 0; i < str.length(); i++) {
+//    char ch = str.charAt(i);
+//    if (!object.containsKey(ch)) {
+//        object.put(ch, 1);
+//    } else {	
+//        object.put(ch, object.get(ch) + 1);
+//    }
+//}
+//System.out.println(object);

@@ -1,0 +1,27 @@
+package com.msai;
+
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
+public class Demo {
+	
+
+	public static void main(String[] args) {
+		
+		Stack<Integer> stk = new Stack<>();
+        
+        System.out.println(stk.isEmpty());
+        stk.add(10);
+        stk.push(20);
+        stk.push(30);
+        stk.push(null);
+        stk.push(40);
+        
+        System.out.println(stk.isEmpty());//false
+        System.out.println(stk);
+        
+     
+	}
+
+}

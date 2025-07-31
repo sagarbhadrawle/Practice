@@ -1,0 +1,25 @@
+package com.masai;
+
+import java.util.List;
+import java.util.function.Consumer;
+import java.util.function.Predicate;
+import java.util.stream.Stream;
+
+public class TerminalOperation {
+
+	public static void main(String[] args) {
+		
+		List<Integer> list = List.of(1,2,3,4,56);
+		
+		Stream<Integer> intstream = list.stream();
+//		System.out.println(intstream);
+		
+		Consumer<Integer> intConsumer = i->System.out.println(i+" ");
+//		intstream.forEachOrdered(intConsumer);
+		
+		
+		Predicate<Integer> intPredicate = i->i>=2;
+		System.out.println(intstream.allMatch(intPredicate));
+		
+	}
+}

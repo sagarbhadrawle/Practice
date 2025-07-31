@@ -1,0 +1,28 @@
+package com.msai;
+
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class Demo {
+	
+
+	public static void main(String[] args) {
+		
+		Set<Integer> ts = new TreeSet<>();
+		 
+		ts.add(10);
+		ts.add(50);
+		ts.add(20);
+		ts.add(60);
+		ts.add(30);
+		ts.add(60);
+		ts.add(10);
+		//ts.add(null);
+		System.out.println(ts);
+     
+	}
+
+}

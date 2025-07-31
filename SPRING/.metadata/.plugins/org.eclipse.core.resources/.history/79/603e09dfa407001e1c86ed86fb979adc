@@ -1,0 +1,34 @@
+package com.msai;
+
+public class Demo {
+
+	public int getPension(int age, int salary) throws  ClassNotFoundException{
+		int pension = 0;
+		
+		if(age> 40 && age <100) {
+			pension = (age * salary)/100;
+		}
+		else {
+			ClassNotFoundException cnf = new ClassNotFoundException("Invalid Age : "+age);
+			throw cnf;
+			
+		}
+		return pension;
+		
+		
+	}
+	
+	public static void main(String[] args) throws ClassNotFoundException {
+		System.out.println("start of main");
+
+		
+		
+		Demo d1 = new Demo();
+	
+		int pension =  d1.getPension(30, 20000);
+		System.out.println(pension);
+	
+		System.out.println("end of main");
+	}
+
+}

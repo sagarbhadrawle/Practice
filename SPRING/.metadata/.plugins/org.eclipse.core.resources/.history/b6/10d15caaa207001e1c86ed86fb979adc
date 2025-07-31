@@ -1,0 +1,37 @@
+package com.msai;
+
+public class Demo {
+
+	public int getPension(int age, int salary) throws ArithmeticException{
+		int pension = 0;
+		
+		if(age> 40 && age <100) {
+			pension = (age * salary)/100;
+		}
+		else {
+			ArithmeticException ae = new ArithmeticException("Invalid age : "+age);
+			throw ae;
+			
+		}
+		return pension;
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		System.out.println("start of main");
+
+		
+		
+		Demo d1 = new Demo();
+		try {
+		int pension =  d1.getPension(30, 20000);
+		System.out.println(pension);
+		}
+		catch (ArithmeticException ae) {
+			System.out.println(ae.getMessage());
+		}
+		System.out.println("end of main");
+	}
+
+}
